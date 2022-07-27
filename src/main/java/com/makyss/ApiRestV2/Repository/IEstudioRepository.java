@@ -19,5 +19,6 @@ import org.springframework.stereotype.Repository;
 public interface IEstudioRepository extends JpaRepository<Estudio, Long>{
     
     List<Estudio> findByprofPersona(Profile profPersona);
+    Estudio findOneByNivel(String nivel);
     
 }

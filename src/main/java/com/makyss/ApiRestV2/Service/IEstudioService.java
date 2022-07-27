@@ -23,5 +23,5 @@ public interface IEstudioService {
     public Estudio buscaEstudio(Long id);
     public List<Estudio> listaEstudio();
     public List<Estudio> listaEstudioProf(Profile profPersona);
-    
+    public Estudio buscaEstudioNivel(String nivel );
 }

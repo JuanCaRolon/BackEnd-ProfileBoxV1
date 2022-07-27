@@ -54,5 +54,10 @@ public class EstudioService implements IEstudioService{
             estuRepo.save(estudio);
         }
     }
+
+    @Override
+    public Estudio buscaEstudioNivel(String nivel) {
+        return estuRepo.findOneByNivel(nivel);
+    }
         
 }

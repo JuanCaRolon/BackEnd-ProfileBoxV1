@@ -53,8 +53,12 @@ public class EstudioController {
 
     @PutMapping("/estudio/modificacion")
     public void modificacionEstudio(@RequestBody Estudio estudio){
-        System.out.println("Modificando");
+        //System.out.println("Modificando");
         estuContr.modificacionEstudio(estudio);
     }
     
+    @GetMapping("/estudio/buscaNivel/{nivel}")
+    public Estudio buscaEstudioNivel(@PathVariable String nivel){
+        return estuContr.buscaEstudioNivel(nivel);
+    }
 }

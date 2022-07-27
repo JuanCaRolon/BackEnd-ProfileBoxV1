@@ -32,6 +32,11 @@ public class ProfileController {
         return profContr.buscaProfile(id);
     }
     
+    @GetMapping("/profile/buscaxpersona/{id}")
+    public Profile buscaProfilePersona(@PathVariable Long id){
+        return profContr.buscaProfilePersona(id);
+    }
+    
     @GetMapping("/profile/lista")
     @ResponseBody
     public List<Profile> listaProfile(){
