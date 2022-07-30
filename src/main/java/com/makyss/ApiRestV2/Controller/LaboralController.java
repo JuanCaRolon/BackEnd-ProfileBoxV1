@@ -51,7 +51,7 @@ public class LaboralController {
         laboContr.bajaLaboral(id);
     }
     
-    @PutMapping("/laboral/modif")
+    @PutMapping("/laboral/modificacion")
     public void modifLaboral(@RequestBody Laboral laboral){
         laboContr.modificacionLaboral(laboral);
     }
