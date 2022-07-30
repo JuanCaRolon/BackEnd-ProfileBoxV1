@@ -5,7 +5,7 @@
  */
 package com.makyss.ApiRestV2.Service;
 
-import com.makyss.ApiRestV2.Model.Persona;
+//import com.makyss.ApiRestV2.Model.Persona;
 import com.makyss.ApiRestV2.Model.Profile;
 import com.makyss.ApiRestV2.Repository.IProfileRepository;
 import java.util.List;
@@ -21,6 +21,7 @@ public class ProfileService implements IProfileService{
     
     @Autowired
     private IProfileRepository profRepo;
+    //private IPersonaRepository persoRepo;
     
     @Override
     public void altaProfile(Profile profile) {
@@ -37,16 +38,22 @@ public class ProfileService implements IProfileService{
         return profRepo.findById(id).orElse(null);
     }
 
-     @Override
-    public Profile buscaProfilePersona(Long id_persona) {
-        //Persona persona=new Persona();
-        //persona.id= id_persona;
-        return profRepo.findOneByPersona(id_persona);
-        
+    /*
+    @Override
+    public Profile buscaProfilePersona(Persona persona) {
+        return profRepo.findOneByPersona(persona); 
     }
     
     @Override
-    public List<Profile> listaProfile() {
+    public Profile buscaProfileIdPersona(Long id) {
+        //persoRepo.findById(id);
+        //return profRepo.findOneByPersona(id_persona);
+        return profRepo.findOneByid_persona(id); 
+    }
+    */
+
+    @Override
+    public List<Profile> listaProile() {
         return profRepo.findAll();
     }
 

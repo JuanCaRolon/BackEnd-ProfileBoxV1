@@ -5,6 +5,7 @@
  */
 package com.makyss.ApiRestV2.Controller;
 
+//import com.makyss.ApiRestV2.Model.Persona;
 import com.makyss.ApiRestV2.Model.Profile;
 import com.makyss.ApiRestV2.Service.IProfileService;
 import java.util.List;
@@ -32,15 +33,22 @@ public class ProfileController {
         return profContr.buscaProfile(id);
     }
     
-    @GetMapping("/profile/buscaxpersona/{id}")
-    public Profile buscaProfilePersona(@PathVariable Long id){
-        return profContr.buscaProfilePersona(id);
+    /*
+    @GetMapping("/profile/buscaxpersona/{persona}")
+    public Profile buscaProfilePersona(@PathVariable Persona persona){
+        return profContr.buscaProfilePersona(persona);
     }
+    
+    @GetMapping("/profile/buscaxidpersona/{id}")
+    public Profile buscaProfileIdPersona(@PathVariable Long id){
+        return profContr.buscaProfileIdPersona(id);
+    }
+    */
     
     @GetMapping("/profile/lista")
     @ResponseBody
     public List<Profile> listaProfile(){
-        return profContr.listaProfile();
+        return profContr.listaProile();
     }
     
     @PostMapping("/profile/alta")

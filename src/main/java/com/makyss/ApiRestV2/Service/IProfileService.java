@@ -5,7 +5,7 @@
  */
 package com.makyss.ApiRestV2.Service;
 
-import com.makyss.ApiRestV2.Model.Persona;
+//import com.makyss.ApiRestV2.Model.Persona;
 import com.makyss.ApiRestV2.Model.Profile;
 import java.util.List;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,9 @@ public interface IProfileService {
     public void altaProfile(Profile profile);
     public void bajaProfile(Long id);
     public Profile buscaProfile(Long id);
-    public Profile buscaProfilePersona(Long id_persona);
-    public List<Profile> listaProfile();
+    //public Profile buscaProfileIdPersona(Long id);
+    //public Profile buscaProfilePersona(Persona persona);
+        
+    public List<Profile> listaProile();
     
 }

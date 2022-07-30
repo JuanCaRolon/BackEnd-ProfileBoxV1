@@ -71,7 +71,7 @@ public class Persona {
     }
     
     //*** Getters y Setters ***
-        public Long getId() {
+    public Long getId() {
         return id;
     }
     

@@ -27,7 +27,7 @@ public class Profile {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "id_persona", referencedColumnName = "id")
     private Persona persona;
     
